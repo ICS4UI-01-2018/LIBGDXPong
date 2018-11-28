@@ -58,6 +58,10 @@ public class Ball {
         shapeBatch.rect(shape.x, shape.y, shape.width, shape.height);
     }
     
+    public boolean collidesWith(Paddle p){
+        return shape.overlaps(p.getBounds());
+    }
+    
     
     
 }
